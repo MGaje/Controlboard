@@ -6,7 +6,7 @@ let win = null;
 
 function createWindow() 
 {
-  win = new BrowserWindow({width: 1920, height: 1080});
+  win = new BrowserWindow({width: 1920, height: 1080, frame: false});
   win.setMenu(null);
 
   // load the dist folder from Angular
