@@ -6,7 +6,7 @@ let win = null;
 
 function createWindow() 
 {
-  win = new BrowserWindow({width: 800, height: 600});
+  win = new BrowserWindow({width: 1920, height: 1080});
   win.setMenu(null);
 
   // load the dist folder from Angular
@@ -17,7 +17,7 @@ function createWindow()
   }));
 
   // Open the DevTools optionally:
-  // win.webContents.openDevTools()
+  win.webContents.openDevTools()
 
   win.on('closed', () => {
     win = null;
