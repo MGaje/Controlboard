@@ -40,13 +40,11 @@ export class LaunchBotComponent implements OnInit, OnDestroy
   public launch()
   {
     this.bots[0].launch();
-    this.botService.save(this.bots);
   }
 
   public close()
   {
     this.bots[0].close("quit");
-    this.botService.save(this.bots);
   }
 
   public showLaunch()
