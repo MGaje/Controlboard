@@ -6,12 +6,12 @@ div#title-bar
     margin: 0;
 }
 
-div#title-bar > div#title
+/* div#title-bar > div#title
 {
     position: fixed;
     top: 0px;
     left: 6px;
-}
+} */
 
 div#title-bar > div#controls
 {
