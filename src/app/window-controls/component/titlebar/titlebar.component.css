@@ -1,0 +1,55 @@
+div#title-bar
+{
+    -webkit-app-region: drag;
+    height: 24px;
+    padding: none;
+    margin: 0;
+}
+
+/* div#title-bar > div#title
+{
+    position: fixed;
+    top: 0px;
+    left: 6px;
+} */
+
+div#title-bar > div#controls
+{
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+div#title-bar > div#controls > div.control-button
+{
+    display: inline-block;
+    padding: 0 10px 0 10px;
+}
+
+div#title-bar > div#controls > div.control-button
+{
+    background-color: transparent;
+}
+
+div#title-bar > div#controls > div.control-button:hover
+{
+    background-color: #1c1c1c;
+}
+
+div#title-bar > div#controls > div.control-button#close:hover
+{
+    background-color: #ff443a;
+}
+
+div#title-bar > div#controls > div.control-button > img
+{
+    width: 20px;
+    position: relative;
+    transform: translateY(10%);
+}
+
+div#title-bar > div#controls > div.control-button#restore > img
+{
+    width: 15px;
+}
