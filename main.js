@@ -6,7 +6,7 @@ let win = null;
 
 function createWindow() 
 {
-  win = new BrowserWindow({width: 1920, height: 1080, frame: false, icon: __dirname + '/assets/icons/controlboard.ico'});
+  win = new BrowserWindow({width: 1920, height: 1080, frame: false, icon: __dirname + '/assets/icons/controlboard.ico', show: false});
   win.setMenu(null);
 
   // load the dist folder from Angular
@@ -19,13 +19,16 @@ function createWindow()
   // Open the DevTools optionally:
   win.webContents.openDevTools();
 
+  win.once('ready-to-show', () => {
+    win.show();
+  });
+
   win.on('closed', () => {
     win = null;
   });
 }
 
 app.on('ready', createWindow);
-
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') 

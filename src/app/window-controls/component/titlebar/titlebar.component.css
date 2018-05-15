@@ -2,8 +2,13 @@ div#title-bar
 {
     -webkit-app-region: drag;
     height: 24px;
+    width: 100%;
     padding: none;
     margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
 }
 
 /* div#title-bar > div#title

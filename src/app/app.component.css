@@ -1,0 +1,21 @@
+div#bot-column
+{
+    background-color: rgba(10, 10, 10, 1);
+    min-height: 100vh;
+}
+
+div#main-column
+{
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+div#main-row
+{
+    margin-bottom: 0;
+}
+
+div#main-container
+{
+    position: relative;
+}
