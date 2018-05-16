@@ -15,6 +15,7 @@ export class BotService
 {
   private readonly botsFile: string = "./dist/assets/bots.json";
   private readonly botsKey: string = "ds-bots";
+  private readonly selectedBotKey: string = "ds-selected-bot";
 
   constructor(private zone: NgZone, private dataStore: DataStoreService) 
   { 
@@ -43,8 +44,21 @@ export class BotService
     // Load bots from the config file.
     return this.dataStore.get(this.botsKey).asObservable()
       .pipe(
-        filter(bots => bots !== undefined),
+        filter(x => x !== undefined),
         take(1)
+      );
+  }
+
+  public setSelectedBot(selectedBotIndex: number)
+  {
+    this.dataStore.set(this.selectedBotKey, selectedBotIndex);
+  }
+
+  public getSelectedBot(): Observable<number>
+  {
+    return this.dataStore.get(this.selectedBotKey).asObservable()
+      .pipe(
+        filter(x => x !== undefined)
       );
   }
 }

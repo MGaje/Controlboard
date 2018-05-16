@@ -8,6 +8,7 @@ div.collection.bot-menu > a.collection-item
     background-color: transparent;
     color: #ffffff;
     border: 0;
+    cursor: pointer;
 }
 
 div.collection.bot-menu > a.collection-item:hover
