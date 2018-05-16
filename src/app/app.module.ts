@@ -5,6 +5,8 @@ import { NgxElectronModule } from 'ngx-electron';
 import { WindowControlsModule } from './window-controls/window-controls.module';
 import { DataStoreModule } from './data-store/data-store.module';
 import { LaunchModule } from './launch/launch.module';
+import { BotListModule } from './bot-list/bot-list.module';
+import { BotDetailsModule } from './bot-details/bot-details.module';
 
 import { AppComponent } from './app.component';
 
@@ -18,7 +20,9 @@ import { AppComponent } from './app.component';
     NgxElectronModule,
     WindowControlsModule,
     DataStoreModule,
-    LaunchModule
+    LaunchModule,
+    BotListModule,
+    BotDetailsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

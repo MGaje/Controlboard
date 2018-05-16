@@ -512,6 +512,7 @@ module.exports = {
     "historyApiFallback": true
   },
   "externals": {
+    "fs": "require('fs')",
     "child_process": "require('child_process')"
   }
 };
