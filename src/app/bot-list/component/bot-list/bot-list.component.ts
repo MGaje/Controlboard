@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 
 import { BotService } from '../../service/bot.service';
-import { Bot } from '../../model/Bot';
+import { Bot } from '../../../core/model/Bot';
 
 @Component({
   selector: 'app-bot-list',
