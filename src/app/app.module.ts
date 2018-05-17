@@ -4,7 +4,6 @@ import { NgxElectronModule } from 'ngx-electron';
 
 import { CoreModule } from './core/core.module';
 import { WindowControlsModule } from './window-controls/window-controls.module';
-import { LaunchModule } from './launch/launch.module';
 import { BotListModule } from './bot-list/bot-list.module';
 import { BotDetailsModule } from './bot-details/bot-details.module';
 
@@ -20,7 +19,6 @@ import { AppComponent } from './app.component';
     NgxElectronModule,
     CoreModule,
     WindowControlsModule,
-    LaunchModule,
     BotListModule,
     BotDetailsModule
   ],
