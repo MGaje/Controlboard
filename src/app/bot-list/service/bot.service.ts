@@ -7,7 +7,7 @@ import { tap } from 'rxjs/operators/tap';
 import { filter } from 'rxjs/operators/filter';
 import { take } from 'rxjs/operators/take';
 
-import { DataStoreService } from '../../data-store/service/data-store.service';
+import { DataStoreService } from '../../core/service/data-store.service';
 import { Bot } from '../model/Bot';
 
 @Injectable()

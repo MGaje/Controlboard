@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/observable';
 import { Bot } from '../model/Bot';
-import { DataStoreService } from '../../data-store/service/data-store.service';
+import { DataStoreService } from '../../core/service/data-store.service';
 
 @Injectable()
 export class BotService 
