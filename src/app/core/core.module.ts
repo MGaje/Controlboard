@@ -2,14 +2,23 @@ import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DataStoreService } from './service/data-store.service';
+import { TitlebarService } from './service/titlebar.service';
+
+import { TitlebarComponent } from './component/titlebar/titlebar.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [],
+  declarations: [
+    TitlebarComponent
+  ],
+  exports: [
+    TitlebarComponent
+  ],
   providers: [
-    DataStoreService
+    DataStoreService,
+    TitlebarService
   ]
 })
 export class CoreModule 

@@ -7,8 +7,13 @@ div.collection.bot-menu > a.collection-item
 {
     background-color: transparent;
     color: #ffffff;
-    border: 0;
+    border-bottom: 1px rgba(20, 20, 20, 1) solid;
     cursor: pointer;
+}
+
+div.collection.bot-menu > a.collection-item:last-child
+{
+    border-bottom: none;
 }
 
 div.collection.bot-menu > a.collection-item:hover

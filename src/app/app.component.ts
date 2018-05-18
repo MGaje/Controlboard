@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { TitlebarService } from './core/service/titlebar.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,10 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent 
 {
-  title = 'app';
-
-  constructor()
+  constructor(private titlebarService: TitlebarService)
   {
-    // Empty.
+    const version: string = require('../../package.json').version;
+    this.titlebarService.updateTitle(`Controlboard v${version}`);
   }
 }

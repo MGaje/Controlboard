@@ -1,0 +1,19 @@
+<div id="title-bar">
+    <div id="title">
+        <span>{{title}}</span>
+    </div>
+    <div id="controls">
+        <div id="minimize" class="control-button" (click)="minimize()">
+            <img src="./assets/icons/titlebar/outline-remove-24px.svg" alt="minimize">
+        </div>
+        <div id="maximize" class="control-button" *ngIf="!isMaximized()" (click)="maximize()">
+            <img src="./assets/icons/titlebar/outline-crop_square-24px.svg" alt="maximize">
+        </div>
+        <div id="restore" class="control-button" *ngIf="isMaximized()" (click)="restore()">
+            <img src="./assets/icons/titlebar/outline-filter_none-24px.svg" alt="restore">
+        </div>
+        <div id="close" class="control-button" (click)="close()">
+            <img src="./assets/icons/titlebar/outline-clear-24px.svg" alt="close">
+        </div>
+    </div>
+</div>
