@@ -11,12 +11,17 @@ div#title-bar
     z-index: 999;
 }
 
-/* div#title-bar > div#title
+div#title-bar > div#title
 {
-    position: fixed;
-    top: 0px;
-    left: 6px;
-} */
+    margin-left: 25px;
+}
+
+div#title-bar > div#title > span
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.75rem;
+}
 
 div#title-bar > div#controls
 {

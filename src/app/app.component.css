@@ -2,12 +2,19 @@ div#bot-column
 {
     background-color: rgba(10, 10, 10, 1);
     min-height: 100vh;
+    padding-top: 30px;
+}
+
+div#bot-column > h6
+{
+    margin-bottom: 20px;
 }
 
 div#main-column
 {
     background-color: #000000;
     min-height: 100vh;
+    padding-top: 30px;
 }
 
 div#main-row
