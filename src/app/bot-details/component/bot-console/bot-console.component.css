@@ -1,0 +1,19 @@
+div#bot-console
+{
+    height: 250px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 0.75rem;
+    border: 1px solid rgba(50, 50, 50, 0.5);
+    border-bottom: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 11.25px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}

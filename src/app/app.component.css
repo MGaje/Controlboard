@@ -15,6 +15,7 @@ div#main-column
     background-color: #000000;
     min-height: 100vh;
     padding-top: 30px;
+    position: relative;
 }
 
 div#main-row
